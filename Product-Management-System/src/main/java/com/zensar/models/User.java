@@ -1,5 +1,6 @@
 package com.zensar.models;
 
+// User class
 public class User {
 
 	// data members
