@@ -1,8 +1,12 @@
 package com.zensar.models;
 
 // User class
+
 // New comment
 // Adding comment
+
+// Bean class
+
 public class User {
 
 	// data members
