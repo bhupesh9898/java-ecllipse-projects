@@ -1,6 +1,7 @@
 package com.zensar.models;
 
 // User class
+// New comment
 public class User {
 
 	// data members
