@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5 ">
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4 jumbotron jumbotron-fluid p-4">
+                <h2 class="text-center">Add Product</h2>
+                <form  action="add" method="post" >
+                    <div class="form-group">
+                        <label for="ordername">Product name</label>
+                        <input type="text" id="ordername"class="form-control"  placeholder="Enter product name"
+                            name="product-name" required="required" >
+                        <p id="username-msg"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="orderprice">Product Price</label>
+                        <input type="number" class="form-control" id="orderprice" placeholder="Enter product price"
+                            name="product-cost" required="required" >
+                        <p id="password-msg"></p>
+                    </div>
+                    <div class="add">
+                        <a href="menu.jsp" class="back">Don't want to add product, please click here to go back</a>
+                    </div>
+                    <br>
+                    <div class="add">
+                        <a href="logout" class="back">Logout</a>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" type="submit" >Add Product</button>
+                </form>
+            </div>
+            <div class="col-xl-4"></div>
+        </div>
+    </div>
+	<!-- <script type="text/javascript" src="javascripts/index.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Delete Product</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row mt-5 ">
+			<div class="col-xl-4"></div>
+			<div class="col-xl-4 jumbotron jumbotron-fluid p-4">
+				<h2 class="text-center">Delete Product</h2>
+				<form action="delete" method="post" onsubmit="">
+					<div class="form-group">
+						<label for="ticket-no">Product Id</label> <input type="number"
+							id="ticket-no" class="form-control"
+							placeholder="Enter Product id" name="product-id"
+							required="required" oninput="">
+						<p id="ticket-no-msg"></p>
+					</div>
+					<div class="">
+						<a href="menu.jsp" class="back">Don't want to delete product,
+							please click here to go back</a>
+					</div>
+					<br>
+					<div class="add">
+						<a href="logout" class="back">Logout</a>
+					</div>
+					<br>
+					<button class="btn btn-primary" type="submit">Delete
+						Product</button>
+				</form>
+			</div>
+			<div class="col-xl-4"></div>
+		</div>
+	</div>
+	<!-- <script type="text/javascript" src="javascripts/index.js"></script> -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

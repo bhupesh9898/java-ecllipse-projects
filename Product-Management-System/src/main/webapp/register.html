@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>User Registration</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div  class="row mt-5 mb-5 jumbotron jumbotron-fluid ">
+			<div class="col-xl-4"></div>
+			<div class="col-xl-4 ">
+				<h2 class="">User Registration</h2>
+				<form action="register" method="post" onsubmit="return validateBothPassword(this)">
+					<div class="form-group">
+						<label for="name">Name</label> <input type="name"
+							class="form-control" id="name" placeholder="Enter full name"
+							name="name" oninput="" required>
+						<p id="name-msg"></p>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label> <input type="email"
+							class="form-control" id="email" placeholder="Enter email id"
+							name="email" oninput="" required>
+						<p id="email-msg"></p>
+					</div>
+					<div class="form-group">
+						<label for="gender">Gender</label> <br> <input type="radio"
+							id="male" name="gender" value="male" checked> <label
+							for="male">Male</label> <input type="radio" id="female"
+							name="gender" value="female" class="ml-3"> <label
+							for="female">Female</label>
+					</div>
+					<div class="form-group">
+						<label for="dob">Date of Birth</label> <input type="date"
+							class="form-control" id="dob" placeholder="mm/dd/yyyy" name="dob"
+							oninput="" required>
+						<p id="dob-msg"></p>
+					</div>
+					<div class="form-group">
+						<label for="mobile">Mobile No.</label> <input type="number"
+							class="form-control" id="mobile" placeholder="Enter mobile no."
+							maxlength="10" minlength="10" name="mobile"
+							oninput="" required>
+						<p id="mobile-msg"></p>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label> <input type="password"
+							class="form-control" id="password" placeholder="password"
+							oninput="validatePassword()" name="password"  required>
+						<p id="password-msg"></p>
+					</div>
+					<div class="form-group">
+						<label for="password">Confirm Password</label> <input type="password"
+							class="form-control" id="confirm-password" placeholder="password"
+							oninput="validateConfirmPassword()" name="confirm-password"  required>
+						<p id="confirm-password-msg"></p>
+					</div>
+					<div class="login">
+						<a href="index.jsp" class="register">Already a registered
+							user, please login here</a>
+					</div>
+					<br>
+					<button type="submit" class="btn btn-primary" >Register</button>
+				</form>
+			</div>
+			<div class="col-xl-4"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/register.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
